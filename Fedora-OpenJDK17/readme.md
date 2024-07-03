@@ -1,6 +1,6 @@
 OS: Fedora:latest
 
-Installs:
-OpenJDK17 + Developer packages
-git
+Installs:  
+OpenJDK17 + Developer packages  
+git  
 GitHub CLI
