@@ -1,6 +1,6 @@
 OS: Fedora:latest
 
 Installs:  
-OpenJDK17 + Developer packages  
+default Fedora nodejs  
 git  
 GitHub CLI

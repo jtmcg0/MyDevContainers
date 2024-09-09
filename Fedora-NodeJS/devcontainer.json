@@ -1,12 +1,12 @@
 {
-	"name": "Fedora Dev Container",
+	"name": "Fedora Node.js Container",
 	// Pull latest available Fedora docker image
 	"image": "fedora:latest",
 	// Set container workspace directory
 	"workspaceFolder": "/workspace",
 	// Bind local workspace to container workspace
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
-	// Install git, github cli, java 17
-	"postCreateCommand": "dnf install -y git java-17-openjdk java-17-openjdk-devel gh"
+	// Install git, github cli, nodejs
+	"postCreateCommand": "dnf install -y git gh nodejs"
   }
   
