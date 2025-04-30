@@ -11,9 +11,5 @@
     }
   },
   "postCreateCommand": "bash /usr/local/bin/devcontainer-setup.sh",
-  "mounts": [
-    "source=${localEnv:HOME}/.cargo,target=/root/.cargo,type=bind",
-    "source=${localEnv:HOME}/.rustup,target=/root/.rustup,type=bind"
-  ],
   "remoteUser": "root"
 }
