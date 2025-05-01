@@ -6,8 +6,8 @@ set -e
 
 # Update and install basic tools
 dnf update -y
-dnf install -y curl git make gcc openssl-devel libappindicator-gtk3-devel webkit2gtk3-devel \
-    gtk3-devel glib2-devel libxcb-devel wget unzip xz tar
+dnf install -y curl git gh make gcc openssl-devel libappindicator-gtk3-devel webkit2gtk3-devel \
+    gtk3-devel glib2-devel libxcb-devel wget unzip xz tar gawk
 
 # Install Rust
 curl https://sh.rustup.rs -sSf | sh -s -- -y

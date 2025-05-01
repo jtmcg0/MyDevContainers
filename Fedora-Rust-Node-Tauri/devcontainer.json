@@ -1,6 +1,15 @@
 {
   "name": "Fedora + Rust + Node.js + Tauri",
-  "image": "fedora:latest",
+ 
+  // Using 41 because at present 42 image has error with awk
+  "image": "fedora:41",
+ 
+  // Set container workspace directory
+  "workspaceFolder": "/workspace",
+ 
+  // Bind local workspace to container workspace
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
+  
   "features": {},
   "customizations": {
     "vscode": {
@@ -10,6 +19,6 @@
       ]
     }
   },
-  "postCreateCommand": "bash /usr/local/bin/devcontainer-setup.sh",
+  "postCreateCommand": "bash /workspace/.devcontainer/devcontainer-setup.sh",
   "remoteUser": "root"
 }
